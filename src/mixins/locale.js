@@ -1,4 +1,4 @@
-import { t } from 'element-ui/src/locale';
+import { t } from 'km-element-ui/src/locale';
 
 export default {
   methods: {

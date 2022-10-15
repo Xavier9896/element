@@ -29,9 +29,9 @@
       ],
       "plugins": [
         ["module-resolver", {
-          "root": ["element-ui"],
+          "root": ["km-element-ui"],
           "alias": {
-            "element-ui/src": "element-ui/lib"
+            "km-element-ui/src": "km-element-ui/lib"
           }
         }]
       ]
