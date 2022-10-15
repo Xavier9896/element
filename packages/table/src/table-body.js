@@ -368,24 +368,28 @@ export default {
                 }
               }
             }
-            return (
-              <td
-                style={ this.getCellStyle($index, cellIndex, row, column) }
-                class={ this.getCellClass($index, cellIndex, row, column) }
-                rowspan={ rowspan }
-                colspan={ colspan }
-                on-mouseenter={ ($event) => this.handleCellMouseEnter($event, row) }
-                on-mouseleave={ this.handleCellMouseLeave }>
-                {
-                  column.renderCell.call(
-                    this._renderProxy,
-                    this.$createElement,
-                    data,
-                    columnsHidden[cellIndex]
-                  )
-                }
-              </td>
-            );
+            if (this.isColumnHidden(cellIndex)) {
+              return <td />;
+            } else {
+              return (
+                <td
+                  style={ this.getCellStyle($index, cellIndex, row, column) }
+                  class={ this.getCellClass($index, cellIndex, row, column) }
+                  rowspan={ rowspan }
+                  colspan={ colspan }
+                  on-mouseenter={ ($event) => this.handleCellMouseEnter($event, row) }
+                  on-mouseleave={ this.handleCellMouseLeave }>
+                  {
+                    column.renderCell.call(
+                      this._renderProxy,
+                      this.$createElement,
+                      data,
+                      columnsHidden[cellIndex]
+                    )
+                  }
+                </td>
+              );
+            }
           })
         }
       </tr>);
