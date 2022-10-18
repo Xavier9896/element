@@ -369,7 +369,12 @@ export default {
               }
             }
             if (this.isColumnHidden(cellIndex)) {
-              return <td />;
+              return <td
+                style={ this.getCellStyle($index, cellIndex, row, column) }
+                class={ this.getCellClass($index, cellIndex, row, column) }
+                rowspan={rowspan}
+                colspan={colspan}>
+              </td>;
             } else {
               return (
                 <td
