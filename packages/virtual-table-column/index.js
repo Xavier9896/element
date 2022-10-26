@@ -1,8 +1,8 @@
-import virtualTableColumn from '../table/src/table-column';
+import VirtualTableColumn from '../table/src/table-column';
 
 /* istanbul ignore next */
-virtualTableColumn.install = function(Vue) {
-  Vue.component(virtualTableColumn.name, virtualTableColumn);
+VirtualTableColumn.install = function(Vue) {
+  Vue.component(VirtualTableColumn.name, VirtualTableColumn);
 };
 
-export default virtualTableColumn;
+export default VirtualTableColumn;
