@@ -1,4 +1,4 @@
-import ElTable from '../../table';
+import ElTable from '../../../packages/table';
 
 import VirtualTableBodyRender from './virtual-table-body-render.js';
 
