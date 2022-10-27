@@ -307,6 +307,14 @@
             {
               "path": "/drawer",
               "title": "Drawer 抽屉"
+            },
+            {
+              "path": "/virtual-table",
+              "title": "VirtualTable 虚拟表格"
+            },
+            {
+              "path": "/virtual-table-column",
+              "title": "VirtualTableColumn 虚拟表格列的内容"
             }
           ]
         }
@@ -621,6 +629,14 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/virtual-table",
+              "title": "VirtualTable"
+            },
+            {
+              "path": "/virtual-table-column",
+              "title": "VirtualTableColumn"
             }
           ]
         }
@@ -935,6 +951,14 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/virtual-table",
+              "title": "VirtualTable"
+            },
+            {
+              "path": "/virtual-table-column",
+              "title": "VirtualTableColumn"
             }
           ]
         }
@@ -1249,6 +1273,14 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/virtual-table",
+              "title": "VirtualTable"
+            },
+            {
+              "path": "/virtual-table-column",
+              "title": "VirtualTableColumn"
             }
           ]
         }

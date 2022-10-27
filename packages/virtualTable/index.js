@@ -1,14 +1,9 @@
-/*
- * @Date: 2022-10-26 10:19:55
- * @LastEditors: 吴迪
- * @LastEditTime: 2022-10-26 10:28:50
- * @FilePath: \km-element\packages\virtualTable\index.js
- */
-import './revise-el-table-mixins'
-import virtualTable from './src/u-table';
-
-virtualTable.install = function(Vue) {
-  Vue.component(virtualTable.name, virtualTable);
+import {UTable} from "umy-table";
+const VirtualTable = UTable
+VirtualTable.name = 'ElVirtualTable'
+/* istanbul ignore next */
+VirtualTable.install = function(Vue) {
+  Vue.component(VirtualTable.name, VirtualTable);
 };
 
-export default virtualTable;
+export default VirtualTable;

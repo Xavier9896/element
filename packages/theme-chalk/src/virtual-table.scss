@@ -1,0 +1,5 @@
+@import "mixins/mixins";
+@import "common/var";
+@import "./table.scss";
+@include b(virtual-table) {
+}
