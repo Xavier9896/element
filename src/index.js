@@ -88,6 +88,8 @@ import Empty from '../packages/empty/index.js';
 import Descriptions from '../packages/descriptions/index.js';
 import DescriptionsItem from '../packages/descriptions-item/index.js';
 import Result from '../packages/result/index.js';
+import VirtualTable from '../packages/virtual-table/index.js';
+import VirtualTableColumn from '../packages/virtual-table-column/index.js';
 import locale from 'km-element-ui/src/locale';
 import CollapseTransition from 'km-element-ui/src/transitions/collapse-transition';
 
@@ -175,6 +177,8 @@ const components = [
   Descriptions,
   DescriptionsItem,
   Result,
+  VirtualTable,
+  VirtualTableColumn,
   CollapseTransition
 ];
 
@@ -302,5 +306,7 @@ export default {
   Empty,
   Descriptions,
   DescriptionsItem,
-  Result
+  Result,
+  VirtualTable,
+  VirtualTableColumn
 };
