@@ -129,7 +129,7 @@
   import uTableMixin from '../u-table-mixins'
   import { parseHeight, isArrayFn } from '../../../utils/common'
   export default {
-      name:'VirtualTable',
+      name:'UTable',
       mixins: [uTableMixin],
       components: {draggable, ElTable, ElPagination, ElCheckbox, ElButton},
       data () {
