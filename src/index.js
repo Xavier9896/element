@@ -26,8 +26,6 @@ import Button from "../packages/button/index.js";
 import ButtonGroup from "../packages/button-group/index.js";
 import Table from "../packages/table/index.js";
 import TableColumn from "../packages/table-column/index.js";
-import virtualTable from "../packages/virtualTable/index.js";
-import virtualTableColumn from "../packages/virtualTableColumn/index.js";
 import DatePicker from "../packages/date-picker/index.js";
 import TimeSelect from "../packages/time-select/index.js";
 import TimePicker from "../packages/time-picker/index.js";
@@ -90,6 +88,8 @@ import Empty from "../packages/empty/index.js";
 import Descriptions from "../packages/descriptions/index.js";
 import DescriptionsItem from "../packages/descriptions-item/index.js";
 import Result from "../packages/result/index.js";
+import VirtualTable from "../packages/virtual-table/index.js";
+import VirtualTableColumn from "../packages/virtual-table-column/index.js";
 import locale from "km-element-ui/src/locale";
 import CollapseTransition from "km-element-ui/src/transitions/collapse-transition";
 
@@ -120,8 +120,6 @@ const components = [
   ButtonGroup,
   Table,
   TableColumn,
-  virtualTable,
-  virtualTableColumn,
   DatePicker,
   TimeSelect,
   TimePicker,
@@ -181,14 +179,14 @@ const components = [
   Result,
   VirtualTable,
   VirtualTableColumn,
-  CollapseTransition
+  CollapseTransition,
 ];
 
 const install = function(Vue, opts = {}) {
   locale.use(opts.locale);
   locale.i18n(opts.i18n);
 
-  components.forEach(component => {
+  components.forEach((component) => {
     Vue.component(component.name, component);
   });
 
@@ -196,8 +194,8 @@ const install = function(Vue, opts = {}) {
   Vue.use(Loading.directive);
 
   Vue.prototype.$ELEMENT = {
-    size: opts.size || '',
-    zIndex: opts.zIndex || 2000
+    size: opts.size || "",
+    zIndex: opts.zIndex || 2000,
   };
 
   Vue.prototype.$loading = Loading.service;
@@ -207,16 +205,15 @@ const install = function(Vue, opts = {}) {
   Vue.prototype.$prompt = MessageBox.prompt;
   Vue.prototype.$notify = Notification;
   Vue.prototype.$message = Message;
-
 };
 
 /* istanbul ignore if */
-if (typeof window !== 'undefined' && window.Vue) {
+if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
 
 export default {
-  version: '2.15.6',
+  version: "2.15.6-fix3",
   locale: locale.use,
   i18n: locale.i18n,
   install,
@@ -310,5 +307,5 @@ export default {
   DescriptionsItem,
   Result,
   VirtualTable,
-  VirtualTableColumn
+  VirtualTableColumn,
 };

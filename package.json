@@ -1,6 +1,6 @@
 {
   "name": "km-element-ui",
-  "version": "2.15.6",
+  "version": "2.15.6-fix3",
   "description": "element-ui 二开私用版，修复了 table fixed 重复渲染性能损耗问题",
   "main": "lib/km-element-ui.common.js",
   "files": [
